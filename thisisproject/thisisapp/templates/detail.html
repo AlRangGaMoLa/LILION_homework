@@ -1,0 +1,6 @@
+<h1>{{detail.title}}</h1>
+{{detail.pub_date}}<br>
+{{detail.body}}<br>
+<a href="{% url 'gotohome' %}">HOME</a>
+<a href="{% url 'edit' detail.id%}">수정</a>
+<a href="{% url 'delete' detail.id%}">삭제</a>

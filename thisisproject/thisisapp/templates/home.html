@@ -1,0 +1,11 @@
+<h1>홈입니당~</h1><br>
+
+
+<a href="{% url 'test' %}">글쓰기</a>
+
+{% for blogs in blogs%}
+<h1>{{blogs.title}}</h1>
+{{blogs.pub_date}}<br>
+{{blogs.body}}<br>
+<a href="{% url 'detail' blogs.id%}">{{blogs.id}}</a>
+{% endfor %}

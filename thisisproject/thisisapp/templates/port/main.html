@@ -1,0 +1,8 @@
+{% load staticfiles %}
+<h1>hello!!</h1>
+<img src="{% static '다운로드   (5).jpg'%}" alt="">
+{% for bunsu in bunsu%}
+<h1>{{bunsu.title}}</h1>
+<img src="{{bunsu.image.url}}" alt="">
+<h2>{{bunsu.description}}</h2>
+{% endfor%}

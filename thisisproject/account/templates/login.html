@@ -1,0 +1,10 @@
+<h1>로긴 페이지입니다.</h1>
+<br>
+<form mothod="POST" action="{%url 'login'%}">
+    {% csrf_token %}
+    Username: <br>
+    <input name = "Username" type="text" value=""><br>
+    PassWord: <br>
+    <input name = "Password1" type="password" value=""><br>
+    <input type = "submit" value="Login!">
+</form>

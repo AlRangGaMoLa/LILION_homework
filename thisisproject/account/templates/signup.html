@@ -1,0 +1,12 @@
+<h1>갑입 페이지입니다.</h1>
+<br>
+<form mothod="POST" action="{%url 'signup'%}">
+        {% csrf_token %}
+    Username: <br>
+    <input name = "Username" type="text" value=""><br>
+    PassWord: <br>
+    <input name = "Password1" type="password" value=""><br>
+    PassWord Confirm: <br>
+    <input name = "Password2" type="password" value=""><br>
+    <input type = "submit" value="Sign up!">
+</form>
